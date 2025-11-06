@@ -16,8 +16,16 @@ else
 // some suprising truthy Values
 // "0", 'false', " ", [], {}, function(){}
 
-const users=[]
-if(users.length === 0) console.log("Array is Empty");
+// const users=[]
+// if(users.length === 0) console.log("Array is Empty");
 
-const emptyObject={}
-if(Object.keys(emptyObject).length === 0) console.log("Object is Empty");
+// const emptyObject={}
+// if(Object.keys(emptyObject).length === 0) console.log("Object is Empty");
+
+
+// Null Coalescing Operator (??) : only applied for null or undefined
+// val1= 5 ?? 10
+// val1 = null ?? 10
+// val1 = undefined ?? 15
+val1 = null ?? 10 ?? 20
+console.log(val1);
