@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button>Stop</button>
+</body>
+<script>
+    function sayName(){
+        console.log("Atharv");
+    }
+
+    const changeText=function(){
+        document.getElementsByTagName("h1")[0].innerHTML="Hey"
+    }
+    const stopTimer= setTimeout(changeText,2000)
+
+    document.getElementsByTagName("button")[0].addEventListener("click",function(){
+        clearTimeout(stopTimer);
+        console.log("Timer Stopped.");
+    })
+
+</script>
+</html>
